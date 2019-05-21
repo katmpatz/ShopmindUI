@@ -14,15 +14,15 @@
   <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="results.css">
   <title>Hello, world!</title>
 </head>
 
-<body>
-<div class="container">
-<h3>Missions</h3>
+<body style="background-color: #fafafa;">
+<div class="container" style="padding-top:100px;font-family: 'Poppins', sans-serif;">
 
 <!-- Nav tabs -->
-<ul class="nav nav-tabs" role="tablist">
+<!-- <ul class="nav nav-tabs" role="tablist">
   <li class="active"><a href="#missions" role="tab" data-toggle="tab">
     <i class="fas fa-shopping-basket fa-2x icon"></i> &nbsp; Missions</a>
   </li>
@@ -36,15 +36,163 @@
     <i class="fas fa-store-alt fa-2x icon"></i>  &nbsp; Stores</a>
   </li>
 </ul>
-</li>
+</li> -->
 
 <!-- Tab panes -->
-<div class="tab-content">
+<!-- <div class="tab-content">
   <div class="tab-pane active" id="missions">Write something for home tab</div>
   <div class="tab-pane" id="shoppers">The Java is an object-oriented programming language <br /> that was developed by James Gosling from the Sun Microsystems in 1995.</div>
   <div class="tab-pane" id="categories">C# is also a programming language</div>
   <div class="tab-pane" id="stores">MySQL is a databased mostly used for web applications.</div>
-</div>
+</div> -->
 
+<div class="card card-nav-tabs card-plain">
+    <div class="card-header card-header-danger">
+        <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+        <div class="nav-tabs-navigation">
+            <div class="nav-tabs-wrapper">
+                <ul class="nav nav-tabs" data-tabs="tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home" data-toggle="tab">
+                          <i class="fas fa-shopping-basket fa-2x icon"></i> &nbsp; Missions
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#updates" data-toggle="tab">
+                          <i class="fas fa-users fa-2x icon"></i>  &nbsp; Shopper Segments
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#history" data-toggle="tab"><i class="fas fa-sitemap fa-2x icon"></i>  &nbsp; Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#history" data-toggle="tab"><i class="fas fa-store-alt fa-2x icon"></i>  &nbsp; Stores</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="card-body ">
+        <div class="tab-content">
+            <div class="tab-pane active" id="home">
+                <!-- <h3 style="margin-left: 25px;">Missions</h3> -->
+                <div class="row">
+                <div class="col-8">
+                <div class="card-table">
+                  <div class="card-title text-center">
+                    <h4>Missions Diagram</h4>
+                  </div>
+                  <div class="card-body">
+                      <canvas id="popChart" width="80" height="70"></canvas>
+                  </div>
+              </div>
+            </div>
+                <div class="col-4">
+                  <div class="card card-table">
+                    <div class="card-title text-center">
+                      <h4>Store Descriptives</h4>
+                    </div>
+                    <div class="card-body">
+                      <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="text-center">#</th>
+                                <th>Name</th>
+                                <th class="text-right">Salary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Andrew Mike</td>
+                                <td class="text-right">&euro; 99,225</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td>John Doe</td>
+                                <td class="text-right">&euro; 89,241</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td>Alex Mike</td>
+                                <td class="text-right">&euro; 92,144</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card-table">
+                  <div class="card-title">
+                    <h4>Mission Overview</h4>
+                  </div>
+                  <div class="card-body">
+                    <table class="table">
+                      <thead>
+                          <tr>
+                              <th class="text-center">Descriptives</th>
+                              <th>Mission 1</th>
+                              <th>Mission 2</th>
+                              <th>Mission 3</th>
+                              <th>Mission 4</th>
+                              <th>Mission 5</th>
+                              <th>Mission 6</th>
+                              <th>Mission 7</th>
+                              <th>Mission 8</th>
+                              <th>Mission 9</th>
+                              <th class="text-right">Mission 10</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td><b>Baskets</b></td>
+                              <td>9.5%</td>
+                              <td>9.5%</td>
+                              <td>9.5%</td>
+                              <td>9.5%</td>
+                              <td>9.5%</td>
+                              <td>9.5%</td>
+                              <td>9.5%</td>
+                              <td>9.5%</td>
+                              <td>9.5%</td>
+                              <td class="text-right">&euro; 10,5%</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            </div>
+            <div class="tab-pane" id="updates">
+                <p> I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that&#x2019;s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I think that&#x2019;s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. </p>
+            </div>
+            <div class="tab-pane" id="history">
+                <p> I think that&#x2019;s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that&#x2019;s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<!-- jQuery Custom Scroller CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="diagram_missions.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 </body>
+
+
 </html>
