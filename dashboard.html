@@ -10,17 +10,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <!--Custom CSS-->
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Hello, world!</title>
   </head>
   <body>
     <!-- Page Content  -->
 
-    <div class="container d-flex h-100">
+    <div class="container d-flex">
         <div class="align-self-center w-100">
+          <section style="padding-top:50px;">
+            <h3>ShopSight Modules</h3>
+            <hr>
             <form>
-              <div class="justify-content-center align-self-center">
-              <div class="form-row">
-                <div class="form-group offset-1 col-md-5 col-sm-12">
+              <br>
+              <div class="row justify-content-center">
+                <div class="form-group col-md-3 col-sm-12">
                   <label for="inputState">Type</label>
                   <select id="inputState" class="search form-control">
                     <option selected>All</option>
@@ -29,7 +33,7 @@
                     <option>Hyper</option>
                   </select>
                 </div>
-                <div class="form-group col-md-5 col-sm-12">
+                <div class="form-group col-md-3 col-sm-12">
                   <label for="inputState">Geography</label>
                   <select id="inputState" class="search form-control">
                     <option selected>All</option>
@@ -37,47 +41,86 @@
                     <option>Panormou, Athens</option>
                   </select>
                 </div>
+                <div class="form-group col-md-3 col-sm-12">
+                  <label for="inputState">Store</label>
+                  <select id="inputState" class="search form-control">
+                    <option selected>All</option>
+                    <option>A1</option>
+                    <option>A2</option>
+                  </select>
+                </div>
               </div>
-          </div>
-        </br>
+            </br>
           <div class="offset-1">
-            <label>Select a feature:</label>
+            <label>Select a module:</label>
           </div>
           <div class="row justify-content-center align-self-center">
-
-              <div class="card active col-md-5 col-sm-12">
+              <div class="card col-md-3 col-sm-12">
                 <div class="card-body">
-                  <h5 class="card-title">Stores</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <div style="text-align:center;">
+                    <i class="fas fa-shopping-basket fa-4x icon"></i>
+                    <h5 class="card-title">Missions</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  </div>
                 </div>
               </div>
-
-              <div class="card col-md-5 col-sm-12">
-                <div class="card-body">
-                  <h5 class="card-title">Shopper Segments</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <div class="card col-md-3 col-sm-12">
+                <div class="card-body row">
+                  <div style="text-align:center;">
+                    <i class="fas fa-users fa-4x icon"></i>
+                    <h5 class="card-title">Shopper Segments</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  </div>
                 </div>
               </div>
-              <div class="card col-md-5 col-sm-12">
-                <div class="card-body">
-                  <h5 class="card-title">Categories</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-              </div>
-              <div class="card col-md-5 col-sm-12">
-                <div class="card-body">
-                  <h5 class="card-title">Missions</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <div class="card col-md-3 col-sm-12">
+                <div class="card-body row">
+                  <div style="text-align:center;">
+                    <i class="fas fa-sitemap fa-4x icon"></i>
+                    <h5 class="card-title">Categories</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  </div>
                 </div>
               </div>
             </div>
             <br>
-            <div class="row justify-content-center align-self-center">
-              <button type="submit" class="btn btn-lg btn-primary">Results</button>
-            <div>
+            <!-- <div class="row justify-content-center align-self-center">
+              <button  href="results.html" class="btn btn-lg btn-primary">Results</button>
+            <div> -->
             </form>
+          </section>
+          <section style="padding-top:50px;">
+            <h3>Data Management</h3>
+            <hr>
+            <div class="row justify-content-center align-self-center">
+              <div class="card active col-md-5 col-sm-12">
+                <div class="card-body row">
+                  <div class="col-lg-3 col-md-4 col-sm-3" style="text-align:center;">
+                    <i class="fas fa-store-alt fa-4x icon"></i>
+                  </div>
+                  <div class="col-lg-9 col-md-8 col-sm-9">
+                    <h5 class="card-title">Store Index</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card active col-md-5 col-sm-12">
+                <div class="card-body row">
+                  <div class="col-lg-3 col-md-4 col-sm-3" style="text-align:center;">
+                    <i class="fas fa-database fa-4x icon"></i>
+                  </div>
+                  <div class="col-lg-9 col-md-8 col-sm-9">
+                    <h5 class="card-title">Upload Data</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
+
+
 
 
     <!-- Optional JavaScript -->
