@@ -11,7 +11,8 @@ x: 35.4112, y: 16.6428,r:16.2
 }
  ],
 backgroundColor: "#c2d1f0",
-hoverBackgroundColor: "#cccccc"
+hoverBackgroundColor: "#cccccc",
+
 },{ label: 'baby care and breakfast (6.5%)',
 data: [
 {

@@ -15,165 +15,130 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="results.css">
-  <title>Hello, world!</title>
+  <title>Missions</title>
 </head>
 
-<body style="background-color: #fafafa;">
-<div class="container" style="padding-top:100px;font-family: 'Poppins', sans-serif;">
+<body>
+  <div class="container">
 
-<!-- Nav tabs -->
-<!-- <ul class="nav nav-tabs" role="tablist">
-  <li class="active"><a href="#missions" role="tab" data-toggle="tab">
-    <i class="fas fa-shopping-basket fa-2x icon"></i> &nbsp; Missions</a>
-  </li>
-  <li><a href="#shoppers" role="tab" data-toggle="tab">
-    <i class="fas fa-users fa-2x icon"></i>  &nbsp; Shopper Segments</a>
-  </li>
-  <li><a href="#categories" role="tab" data-toggle="tab">
-    <i class="fas fa-sitemap fa-2x icon"></i>  &nbsp; Categories</a>
-  </li>
-  <li><a href="#stores" role="tab" data-toggle="tab">
-    <i class="fas fa-store-alt fa-2x icon"></i>  &nbsp; Stores</a>
-  </li>
-</ul>
-</li> -->
+    <!--Navbar-->
+    <div class="card-plain">
+      <div class="navigation">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">
+              <i class="fas fa-angle-left fa-2x icon"></i> &nbsp; Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="selected">
+              <i class="fas fa-shopping-basket fa-2x icon"></i> &nbsp; Missions
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-users fa-2x icon"></i>  &nbsp; Shopper Segments
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-sitemap fa-2x icon"></i>  &nbsp; Categories
+            </a>
+          </li>
+        </ul>
+      </div>
+        <!--End of Navbar-->
 
-<!-- Tab panes -->
-<!-- <div class="tab-content">
-  <div class="tab-pane active" id="missions">Write something for home tab</div>
-  <div class="tab-pane" id="shoppers">The Java is an object-oriented programming language <br /> that was developed by James Gosling from the Sun Microsystems in 1995.</div>
-  <div class="tab-pane" id="categories">C# is also a programming language</div>
-  <div class="tab-pane" id="stores">MySQL is a databased mostly used for web applications.</div>
-</div> -->
-
-<div class="card card-nav-tabs card-plain">
-    <div class="card-header card-header-danger">
-        <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-        <div class="nav-tabs-navigation">
-            <div class="nav-tabs-wrapper">
-                <ul class="nav nav-tabs" data-tabs="tabs">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home" data-toggle="tab">
-                          <i class="fas fa-shopping-basket fa-2x icon"></i> &nbsp; Missions
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#updates" data-toggle="tab">
-                          <i class="fas fa-users fa-2x icon"></i>  &nbsp; Shopper Segments
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#history" data-toggle="tab"><i class="fas fa-sitemap fa-2x icon"></i>  &nbsp; Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#history" data-toggle="tab"><i class="fas fa-store-alt fa-2x icon"></i>  &nbsp; Stores</a>
-                    </li>
-                </ul>
+      <div class="content">
+        <div class="row card-composition">
+          <div class="col-8">
+            <div class="card-table h-100">
+              <div class="card-title text-center">
+                <h4>Missions Diagram</h4>
+              </div>
+              <div class="card-body">
+                <canvas id="popChart" width="80" height="70"></canvas>
+              </div>
             </div>
+          </div>
+          <div class="col-4">
+            <div class="card card-table h-100">
+              <div class="card-title text-center">
+                <h4>Store Descriptives</h4>
+              </div>
+              <div class="card-body">
+                <table class="table">
+                  <thead>
+                      <tr>
+                          <th class="text-center">#</th>
+                          <th>Name</th>
+                          <th class="text-right">Salary</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td class="text-center">1</td>
+                          <td>Andrew Mike</td>
+                          <td class="text-right">&euro; 99,225</td>
+                      </tr>
+                      <tr>
+                          <td class="text-center">2</td>
+                          <td>John Doe</td>
+                          <td class="text-right">&euro; 89,241</td>
+                      </tr>
+                      <tr>
+                          <td class="text-center">3</td>
+                          <td>Alex Mike</td>
+                          <td class="text-right">&euro; 92,144</td>
+                      </tr>
+                  </tbody>
+              </table>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="card-body ">
-        <div class="tab-content">
-            <div class="tab-pane active" id="home">
-                <!-- <h3 style="margin-left: 25px;">Missions</h3> -->
-                <div class="row">
-                <div class="col-8">
-                <div class="card-table">
-                  <div class="card-title text-center">
-                    <h4>Missions Diagram</h4>
-                  </div>
-                  <div class="card-body">
-                      <canvas id="popChart" width="80" height="70"></canvas>
-                  </div>
-              </div>
+        <div>
+          <div class="card-table">
+            <div class="card-title">
+              <h4>Mission Overview</h4>
             </div>
-                <div class="col-4">
-                  <div class="card card-table">
-                    <div class="card-title text-center">
-                      <h4>Store Descriptives</h4>
-                    </div>
-                    <div class="card-body">
-                      <table class="table">
-                        <thead>
-                            <tr>
-                                <th class="text-center">#</th>
-                                <th>Name</th>
-                                <th class="text-right">Salary</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-center">1</td>
-                                <td>Andrew Mike</td>
-                                <td class="text-right">&euro; 99,225</td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">2</td>
-                                <td>John Doe</td>
-                                <td class="text-right">&euro; 89,241</td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">3</td>
-                                <td>Alex Mike</td>
-                                <td class="text-right">&euro; 92,144</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="card-table">
-                  <div class="card-title">
-                    <h4>Mission Overview</h4>
-                  </div>
-                  <div class="card-body">
-                    <table class="table">
-                      <thead>
-                          <tr>
-                              <th class="text-center">Descriptives</th>
-                              <th>Mission 1</th>
-                              <th>Mission 2</th>
-                              <th>Mission 3</th>
-                              <th>Mission 4</th>
-                              <th>Mission 5</th>
-                              <th>Mission 6</th>
-                              <th>Mission 7</th>
-                              <th>Mission 8</th>
-                              <th>Mission 9</th>
-                              <th class="text-right">Mission 10</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                              <td><b>Baskets</b></td>
-                              <td>9.5%</td>
-                              <td>9.5%</td>
-                              <td>9.5%</td>
-                              <td>9.5%</td>
-                              <td>9.5%</td>
-                              <td>9.5%</td>
-                              <td>9.5%</td>
-                              <td>9.5%</td>
-                              <td>9.5%</td>
-                              <td class="text-right">&euro; 10,5%</td>
-                          </tr>
-                      </tbody>
-                  </table>
-                  </div>
-                </div>
-              </div>
-
+            <div class="card-body">
+              <table class="table">
+                <thead>
+                    <tr>
+                        <th class="text-center">Descriptives</th>
+                        <th>Mission 1</th>
+                        <th>Mission 2</th>
+                        <th>Mission 3</th>
+                        <th>Mission 4</th>
+                        <th>Mission 5</th>
+                        <th>Mission 6</th>
+                        <th>Mission 7</th>
+                        <th>Mission 8</th>
+                        <th>Mission 9</th>
+                        <th class="text-right">Mission 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Baskets</b></td>
+                        <td>9.5%</td>
+                        <td>9.5%</td>
+                        <td>9.5%</td>
+                        <td>9.5%</td>
+                        <td>9.5%</td>
+                        <td>9.5%</td>
+                        <td>9.5%</td>
+                        <td>9.5%</td>
+                        <td>9.5%</td>
+                        <td class="text-right">&euro; 10,5%</td>
+                    </tr>
+                </tbody>
+            </table>
             </div>
-            </div>
-            <div class="tab-pane" id="updates">
-                <p> I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that&#x2019;s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I think that&#x2019;s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. </p>
-            </div>
-            <div class="tab-pane" id="history">
-                <p> I think that&#x2019;s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that&#x2019;s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.</p>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
   </div>
 
